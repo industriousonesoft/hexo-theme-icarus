@@ -7,8 +7,12 @@
         width: $fullhd - 1 * $gap
 
     .is-1-column .container, .is-2-column .container
-        max-width: $desktop - 1 * $gap
-        width: $desktop - 1 * $gap
+        max-width: $desktop - 2 * $gap
+        width: $desktop - 2 * $gap
+
+    .columns
+        margin-left: -3rem
+        margin-right: -3rem
 
 +fullhd()
     .is-3-column .container
@@ -16,12 +20,16 @@
         width: $fullhd - 1 * $gap
 
     .is-2-column .container
-        max-width: $widescreen - 1 * $gap
-        width: $widescreen - 1 * $gap
+        max-width: $widescreen - 2 * $gap
+        width: $widescreen - 2 * $gap
 
     .is-1-column .container
-        max-width: $desktop - 1 * $gap
-        width: $desktop - 1 * $gap
+        max-width: $desktop - 2 * $gap
+        width: $desktop - 2 * $gap
+
+    .columns
+        margin-left: -3rem
+        margin-right: -3rem
 
 +tablet()
     .is-sticky
