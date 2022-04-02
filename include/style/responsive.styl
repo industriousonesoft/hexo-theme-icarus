@@ -3,21 +3,23 @@
  * --------------------------------- */
 +widescreen()
     .is-3-column .container
-        max-width: $fullhd - 1 * $gap
-        width: $fullhd - 1 * $gap
+        max-width: $fullhd - 1.5 * $gap
+        width: $fullhd - 1.5 * $gap
 
     .is-1-column .container, .is-2-column .container
         max-width: $desktop - 2 * $gap
         width: $desktop - 2 * $gap
-
-    .columns
-        margin-left: -3rem
-        margin-right: -3rem
+    
+    /* Widen page size */
+    .column.is-3-widescreen
+            width: 22%
+    .column.is-6-widescreen
+            width: 56%
 
 +fullhd()
     .is-3-column .container
-        max-width: $fullhd - 1 * $gap
-        width: $fullhd - 1 * $gap
+        max-width: $fullhd - 1.5 * $gap
+        width: $fullhd - 1.5 * $gap
 
     .is-2-column .container
         max-width: $widescreen - 2 * $gap
@@ -27,9 +29,11 @@
         max-width: $desktop - 2 * $gap
         width: $desktop - 2 * $gap
 
-    .columns
-        margin-left: -3rem
-        margin-right: -3rem
+    /* Widen page size */
+    .column.is-3-widescreen
+            width: 22%
+    .column.is-6-widescreen
+            width: 56%
 
 +tablet()
     .is-sticky
